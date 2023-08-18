@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log IN</title>
+
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="./css/all.css" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <!-- My Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="brand">Taha Store</a>
+          <nav>
+            <ul id="link">
+              <li><a href="login.html">Log in</a></li>
+              <li class="ml-3">
+                <a href="index.html">Sign up</a>
+              </li>
+            </ul>
+            <ul id="user_info">
+              <li><a href="" id="user"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Form -->
+    <div class="form-container">
+      <section class="section-form">
+        <h3>Login</h3>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" placeholder="ex. Taha Khaled" id="username" />
+          <label for="email">Email</label>
+          <input type="password" placeholder="ex. 12**to" id="password" />
+          <input type="submit" value="Sign In" id="sign_in" class="btn" />
+        </form>
+        <span>OR</span>
+        <i class="fas fa-angle-double-down"></i>
+        <p>
+          I don't have an account,
+          <a href="login.html">Sign up</a>
+        </p>
+      </section>
+    </div>
+
+    <!-- Custom JS File -->
+    <script src="./js/login.js"></script>
+  </body>
+</html>

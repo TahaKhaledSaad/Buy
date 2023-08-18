@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart</title>
+
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="./css/all.css" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+
+    <style>
+      .product_item::after,
+      .product_item::before {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- My header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="brand">Taha Store</a>
+          <nav>
+            <ul id="user_info">
+              <!-- username is appear in this li -->
+              <li><a href="" id="user"></a></li>
+              <li class="ml-5"><a href="./products.html">Go Back</a></li>
+            </ul>
+            <!-- user_info -->
+          </nav>
+          <!-- nav -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Cart Products Container -->
+    <div class="container">
+      <h2 class="main-title">Your Cart</h2>
+      <div class="cart mb-5">
+        <!-- you design the shape of One element and take it to js to modify dynamic code in it and put data from array of object  -->
+        <!-- Drawn By JS -->
+      </div>
+    </div>
+
+    <!-- Custom JS File -->
+    <script src="./js/script.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

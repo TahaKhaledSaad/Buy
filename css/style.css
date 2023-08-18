@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-title {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: fit-content;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: 0;
+  background: #ddd;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 5px;
+  bottom: -10px;
+  left: 0;
+  background-color: #333;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: #333;
+}
+
+header .container .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content a.brand {
+  height: 70px;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header-content nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.header-content nav ul#links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content nav ul#user_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li a {
+  color: white;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: #222;
+  text-decoration: none;
+}
+
+#user_info #user {
+  border: none;
+  border-radius: 0;
+  padding: 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+#user_info #user:hover {
+  background-color: transparent;
+  color: white;
+}
+
+ul#user_info li i {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  margin: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+ul#user_info li i .counter {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  font-size: 13px;
+  color: white;
+  font-weight: normal;
+  background-color: #e23b26;
+  border-radius: 100%;
+  text-align: center;
+  top: -15px;
+  right: -10px;
+}
+
+#user_info span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping_cart {
+  z-index: 2;
+}
+
+.cart_products {
+  background-color: #333;
+  color: white;
+  position: absolute;
+  width: 150px;
+  transform: translate(-70px, 0px);
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  top: 72px;
+  padding: 20px 5px 0px 5px;
+  display: none;
+  font-size: 13px;
+}
+
+.cart_products a {
+  color: black;
+  font-size: 16px;
+  padding: 5px 0px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: lightblue;
+  border-radius: 3px;
+  width: 100% !important;
+  margin: 5px auto;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cart_products a:hover,
+.cart_products a:focus {
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+/* ************** Form Design ************** */
+.form-container {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#666, #777, white);
+}
+.section-form {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 5px 5px 20px #ccc;
+  background-color: white;
+}
+.section-form h3 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #222;
+  text-align: center;
+}
+.section-form form label {
+  display: block;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.section-form form input {
+  margin-bottom: 15px;
+  padding: 5px;
+  border: none;
+  background: #eee;
+  width: 100%;
+  border-radius: 5px;
+}
+.section-form form input:focus {
+  outline: 1px solid #ddd;
+}
+.section-form form .btn {
+  background: #333;
+  color: white;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.section-form form .btn:hover {
+  background-color: rgb(51 51 51 / 90%);
+}
+.section-form span {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  z-index: 2;
+}
+.section-form span::before,
+.section-form span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 1px;
+  background-color: #ccc;
+  z-index: -1;
+}
+.section-form span::before {
+  left: 32px;
+}
+.section-form span:after {
+  right: 32px;
+}
+.section-form i {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  animation: up-down 1s infinite ease-out;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+@keyframes up-down {
+  0%,
+  10% {
+    top: -5px;
+  }
+  20%,
+  30%,
+  40% {
+    top: -2px;
+  }
+  50% {
+    top: 0;
+  }
+  60%,
+  70%,
+  80% {
+    bottom: -2px;
+  }
+  100% {
+    bottom: -5px;
+  }
+}
+.section-form p {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 15px;
+}
+.section-form p a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul#user_info {
+  display: none;
+}
+
+/*
+    هنا يا باشا الأيكون ماكنتش شغالة أتحلت ب 
+    display: block; 
+    because inline element is very complex to deal with it
+*/
+.card-body i {
+  width: 20px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+/* -------------------------------------- */
+
+.product_item {
+  border: 2px solid #ddd;
+  box-shadow: 0 0 20px #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  position: relative;
+}
+.product_item::after {
+  content: "Best Saller";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  height: calc(100% - 10px);
+  background: rgb(255 164 28 / 70%);
+  opacity: 0.7;
+  writing-mode: vertical-rl;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0 0 5px 5px;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.product_item:hover::after {
+  opacity: 1;
+}
+
+.product_item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.3s;
+}
+
+.product_item:hover::before {
+  border-width: 10px;
+  border-color: #ffa41f white white #ffa41f;
+  border-style: solid;
+}
+
+@media (max-width: 991px) {
+  .product_item::after,
+  .product_item::before {
+    right: 0;
+  }
+  .product_item::after {
+    width: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .product_item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .product_item p {
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .image {
+    margin-bottom: 15px;
+  }
+}
+.product_item .image {
+  margin-right: 15px;
+  align-self: center;
+  transition: 0.3s;
+}
+
+
+
+.product_item .image img {
+  width: 250px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.product_item:hover .image img {
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+
+}
+
+.product_item .info h3 {
+  font-weight: bold;
+}
+.product_item .info .stars {
+  margin-bottom: 15px;
+}
+.product_item .info .stars i {
+  color: #ffa41c;
+}
+.product_item .info p {
+  color: #777;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.product_item .info button {
+  /* display: block; */
+  margin-bottom: 15px;
+}
+.product_item .info .heart_icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
