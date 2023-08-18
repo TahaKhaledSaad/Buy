@@ -19,7 +19,7 @@ loginBtn.addEventListener("click", function (e) {
       getPassword === password.value
     ) {
       setTimeout(() => {
-        window.location = "../products.html";
+        window.location = "products.html";
       }, 1500);
     } else {
       alert("Invalid Password or Email.");
